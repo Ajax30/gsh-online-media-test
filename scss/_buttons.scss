@@ -1,0 +1,41 @@
+@import './_mixins';
+
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: $success;
+  @include border-radius($border-radius-big);
+
+  // Types
+  &.btn-pill {
+    @include border-radius(9999px);
+    padding: 4px 8px;
+    color: $default-text-color;
+  }
+
+  &.btn-full {
+    width: 100%;
+  }
+
+  // Sizes
+  &.btn-big {
+    padding: $default-padding * 4;
+  }
+
+  // Button colors
+  &.btn-primary {
+    @include button-colors($white, $primary);
+   }
+   &.btn-success {
+    @include button-colors($white, $success);
+   }
+   &.btn-danger {
+    @include button-colors($white, $danger);
+   }
+}
+

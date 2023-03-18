@@ -1,7 +1,9 @@
+@import './_mixins';
+
 .games-table {
   table-layout: auto;
   width: 98%;
-  margin: 1%;
+  margin: $default-padding * 2 1%;
   border-collapse: separate;
   border-spacing: 0 $default-padding;
   padding-left: $default-padding;
@@ -16,6 +18,10 @@
   th {
      text-align: left;
      padding: $default-padding;
+
+     &:first-child {
+      width: 40px;
+     }
   }
   tbody {
     tr {
@@ -23,6 +29,7 @@
         height: 40px;
         background: $white;
         vertical-align: middle;
+
         &:first-child {
           padding-left: $default-padding;
           border-top-left-radius: $border-radius-big;
@@ -33,13 +40,14 @@
           padding-right: $default-padding;
           border-top-right-radius: $border-radius-big;
           border-bottom-right-radius: $border-radius-big;
+          font-family: $secondary-font-bold;
         }
       }
     }
     .count {
       color: $white;
       background: $primary;
-      border-radius: $border-radius-small;
+      @include border-radius($border-radius-small);
       padding: $small-padding $default-padding;
       text-align: center;
       line-height: 1;

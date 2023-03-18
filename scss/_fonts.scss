@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: 'Proxima Nova Condensed Bold';
+  src: url('../fonts/ProximaNovaCond-Bold.eot');
+  src: url('../fonts/ProximaNovaCond-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNovaCond-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Neuzeit Grotesk';
   src: url('../fonts/NeuzeitGro-Reg.eot');
   src: url('../fonts/NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),

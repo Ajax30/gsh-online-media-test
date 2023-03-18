@@ -1,0 +1,78 @@
+@import './_mixins';
+
+.breadcrumbs {
+  margin: 0 1%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: $default-padding * 2;
+  background: $light-green;
+  color: $success;
+  @include border-radius($border-radius-big);
+
+  .flag {
+    padding-right: $default-padding * 2;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .separator {
+    padding: 0 $default-padding;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+}
+
+.tabbed-content {
+  margin-top: $default-padding;
+  .tabs { 
+    overflow-x: auto;
+    background: $light-green;
+    &.scrollbar {
+      height: 38px; 
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 $default-padding * 2;
+
+      a {
+        font-family: $secondary-font;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .pills {
+    padding: 0 $default-padding * 15 0 $default-padding * 2;
+    margin-top: $default-padding * 2;
+    margin-bottom: $default-padding;
+    position: relative;
+  }
+
+  .view-switch {
+    position: absolute;
+    right: 1%;
+    padding-right: $default-padding;
+    top: -$default-padding;  
+
+    a {
+      text-decoration: none;
+      color: $medium-gray;
+      font-size: 24px;
+      &.active {
+        color: $success;
+      }
+    }
+  }
+
+}

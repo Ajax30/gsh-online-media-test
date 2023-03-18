@@ -1,10 +1,12 @@
 // Colors
 $white: #fff;
 $light-gray: #f7f7f7;
+$medium-gray: #E0E1E5;
 $default-text-color: #2b2b2b;
 $primary: #1B549E;
 $success: #1B9E4B;
 $danger: #E1223C;
+$light-green: #F4FCF7;
 
 // Size
 $default-padding: 5px;
@@ -12,3 +14,8 @@ $small-padding: 2px;
 $border-radius: 5px;
 $border-radius-small: 3px;
 $border-radius-big: 10px;
+
+// Fonts
+$primary-font: 'Neuzeit Grotesk', Helvetica, sans-serif;
+$secondary-font: 'Proxima Nova Condensed', Helvetica, sans-serif;
+$secondary-font-bold: 'Proxima Nova Condensed Bold', Helvetica, sans-serif;
