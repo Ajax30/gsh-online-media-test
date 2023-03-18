@@ -1,0 +1,49 @@
+.games-table {
+  table-layout: auto;
+  width: 98%;
+  margin: 1%;
+  border-collapse: separate;
+  border-spacing: 0 $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  background: $light-gray;
+  border-radius: $border-radius;
+  font-family: 'Proxima Nova Condensed', Helvetica, sans-serif;
+  font-weight: 600;
+  .values {
+    text-align: center;
+  }
+  th {
+     text-align: left;
+     padding: $default-padding;
+  }
+  tbody {
+    tr {
+      td {
+        height: 40px;
+        background: $white;
+        vertical-align: middle;
+        &:first-child {
+          padding-left: $default-padding;
+          border-top-left-radius: $border-radius-big;
+          border-bottom-left-radius: $border-radius-big;
+        }
+        
+        &:last-child {
+          padding-right: $default-padding;
+          border-top-right-radius: $border-radius-big;
+          border-bottom-right-radius: $border-radius-big;
+        }
+      }
+    }
+    .count {
+      color: $white;
+      background: $primary;
+      border-radius: $border-radius-small;
+      padding: $small-padding $default-padding;
+      text-align: center;
+      line-height: 1;
+      font-size: 11px;
+    }
+  }
+}

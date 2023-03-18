@@ -1,0 +1,30 @@
+@import './variables';
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  height: 54px;
+  justify-content: space-between;
+  align-items: center;
+  background: $success;
+
+  img {
+    width: 88px;
+    height: auto;
+    display: block;
+  }
+}
+
+.main {
+  border-radius: $border-radius-big;
+  background: $white;
+  padding: $default-padding * 2;
+}
