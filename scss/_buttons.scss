@@ -5,7 +5,7 @@
   border: none;
   cursor: pointer;
   white-space: nowrap;
-  padding: 10px;
+  padding: $default-padding * 2;
   text-align: center;
   text-decoration: none;
   color: $success;
@@ -16,6 +16,11 @@
     @include border-radius(9999px);
     padding: 4px 8px;
     color: $default-text-color;
+    margin-right: $default-padding;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &.btn-full {
@@ -25,6 +30,12 @@
   // Sizes
   &.btn-big {
     padding: $default-padding * 4;
+  }
+
+  &.btn-small {
+    padding: $default-padding;
+    @include border-radius($default-padding);
+    min-width: 24px;
   }
 
   // Button colors
@@ -37,5 +48,15 @@
    &.btn-danger {
     @include button-colors($white, $danger);
    }
+   &.btn-light {
+    @include button-colors($success, $light-green);
+   }
+}
+
+.show-more {
+  color: $success;
+  font-family: $secondary-font;
+  text-decoration: none;
+  font-weight: bold;
 }
 

@@ -2,8 +2,8 @@
 
 .games-table {
   table-layout: auto;
-  width: 98%;
-  margin: $default-padding * 2 1%;
+  width: calc(100% - $default-padding * 2);
+  margin: $default-padding * 2 $default-padding;
   border-collapse: separate;
   border-spacing: 0 $default-padding;
   padding-left: $default-padding;
@@ -52,6 +52,17 @@
       text-align: center;
       line-height: 1;
       font-size: 11px;
+    }
+  }
+}
+
+.games-table2 {
+  tbody {
+    tr {
+      td {
+        padding: $default-padding;
+        height: auto;
+      }
     }
   }
 }

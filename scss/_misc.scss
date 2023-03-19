@@ -1,0 +1,92 @@
+@import './_mixins';
+
+.separator {
+  height: 4px;
+  margin: 0 $default-padding $default-padding * 3 $default-padding;
+  background: $light-gray;
+}
+
+.flag {
+  padding-right: $default-padding * 2;
+
+  img {
+    width: 20px;
+  }
+}
+
+.top-match {
+  max-width: 992px;
+  margin: $default-padding * 2 auto 0 auto;
+  padding: $default-padding $default-padding * 2;
+  display: grid;
+  gap: $default-padding;
+  grid-template-columns: 80px calc(100%  - 170px) 80px;
+
+  .team {
+    margin-bottom: $default-padding * 2;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      @include border-radius(50%);
+      border: 10px solid $light-gray;
+
+      img {
+        width: 30px;
+        height: auto;
+      }
+    }
+
+    .name {
+      font-family: $secondary-font;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: $default-padding * 2;
+    }
+  }
+
+  .percentage-bar {
+    display: flex;
+    height: $default-padding * 4;
+    @include border-radius(999px);
+    overflow: hidden;
+    margin-bottom: $default-padding;
+
+    & > span {
+      display: block;
+      text-align: center;
+      height: $default-padding * 4;
+      line-height: $default-padding * 4;
+    }
+
+    .success {
+      background: $success;
+      color: $white;
+    }
+
+    .warning {
+      background: $light-yellow;
+      color: $warning;
+    }
+
+    .danger {
+      background: $light-red;
+      color: $danger;
+    }
+  }
+}
+
+.info-text {
+  padding: 0 $default-padding * 2;
+  margin: 0 auto;
+  max-width: 992px;
+}
+
+@media only screen and (min-width: 768px) {
+  .info-text {
+    text-align: center;
+  }
+}

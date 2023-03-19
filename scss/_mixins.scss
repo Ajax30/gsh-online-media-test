@@ -12,6 +12,35 @@
   background-color: $backgroundColor;
 
     &:hover {
-      color: $white;
+      color: inherit;
     }
- }
+}
+
+@mixin alert-colors($textColor, $borderColor, $backgroundColor) {
+  color: $textColor;
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+}
+
+@mixin scrollbar($size, $radius, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    @include border-radius($radius);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

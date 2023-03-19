@@ -1,0 +1,102 @@
+@import './_mixins';
+
+// Display
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.center-h {
+    justify-content: center;
+  }
+
+  &.center-v {
+    align-items: center;
+  }
+}
+
+// Padding & Margin
+.pt-5 {
+  padding-top: $default-padding;
+}
+
+.pb-5 {
+  padding-bottom: $default-padding;
+}
+
+.pl-5 {
+  padding-left: $default-padding;
+}
+
+.pr-5 {
+  padding-right: $default-padding;
+}
+
+.pt-3 {
+  padding-top: 3px;
+}
+
+.pb-3 {
+  padding-bottom: 3px;
+}
+
+.mt-5 {
+  margin-top: $default-padding;
+}
+
+.mb-5 {
+  margin-bottom: $default-padding;
+}
+
+.ml-5 {
+  margin-left: $default-padding;
+}
+
+.mr-5 {
+  margin-right: $default-padding;
+}
+
+.mx-5 {
+  margin-left: $default-padding;
+  margin-right: $default-padding;
+}
+
+// Text
+.one-line-text {
+  white-space: nowrap;
+}
+
+.text-success {
+  color: $success !important;
+}
+
+.text-warning {
+  color: $warning !important;
+}
+
+.text-danger {
+  color: $danger !important;
+}
+
+// Text alignment
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}

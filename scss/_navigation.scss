@@ -11,14 +11,6 @@
   color: $success;
   @include border-radius($border-radius-big);
 
-  .flag {
-    padding-right: $default-padding * 2;
-
-    img {
-      width: 20px;
-    }
-  }
-
   .separator {
     padding: 0 $default-padding;
   }
@@ -53,17 +45,29 @@
   }
 
   .pills {
-    padding: 0 $default-padding * 15 0 $default-padding * 2;
+    padding: 0 $default-padding * 2;
     margin-top: $default-padding * 2;
     margin-bottom: $default-padding;
     position: relative;
+    overflow-x: auto;
+    @include scrollbar(4px, 4px, $success, transparent);
+
+    .pills-container {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: $default-padding;
+    }
+    
+    &.with-icons {
+      padding: 0 $default-padding * 15 0 $default-padding * 2;
+    } 
   }
 
   .view-switch {
     position: absolute;
-    right: 1%;
+    right: $default-padding;
     padding-right: $default-padding;
-    top: -$default-padding;  
+    top: 0;  
 
     a {
       text-decoration: none;
@@ -74,5 +78,4 @@
       }
     }
   }
-
 }

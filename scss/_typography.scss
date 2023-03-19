@@ -6,3 +6,15 @@ body {
   color: $default-text-color;
   font-size: 12px;
 }
+
+.page-heading {
+  color: $success;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: $default-padding;
+  margin-right: $default-padding;
+  @include border-radius($border-radius-big);
+  background: $light-gray;
+  padding: $default-padding $default-padding * 2;
+}
