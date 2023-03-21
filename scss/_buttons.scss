@@ -30,6 +30,8 @@
   // Sizes
   &.btn-big {
     padding: $default-padding * 4;
+    font-family: $primary-font-extra-bold;
+    font-size: 26px;
   }
 
   &.btn-small {
