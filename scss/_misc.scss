@@ -1,6 +1,6 @@
 @import './_mixins';
 
-.separator {
+.horizontal-separator {
   height: 4px;
   margin: 0 $default-padding $default-padding * 3 $default-padding;
   background: $light-gray;

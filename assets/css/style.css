@@ -11490,7 +11490,7 @@ body {
   height: auto;
 }
 
-.separator {
+.horizontal-separator {
   height: 4px;
   margin: 0 5px 15px 5px;
   background: #f7f7f7;
