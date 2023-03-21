@@ -9,7 +9,8 @@
   
   .modal-box {
     background: $white;
-    width: 350px;
+    width: 96%;
+    max-width: 350px;
     padding: $default-padding * 4;
     @include border-radius($border-radius-big);
     position: absolute;
