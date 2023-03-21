@@ -29,21 +29,31 @@
 }
 
 @font-face {
-  font-family: 'Neuzeit Grotesk Condensed';
-  src: url('../fonts/NeuzeitGroCon-Bla.eot');
-  src: url('../fonts/NeuzeitGroCon-Bla.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/NeuzeitGroCon-Bla.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Neuzeit Grotesk Bold';
   src: url('../fonts/NeuzeitGro-Bol.eot');
   src: url('../fonts/NeuzeitGro-Bol.eot?#iefix') format('embedded-opentype'),
       url('../fonts/NeuzeitGro-Bol.woff') format('woff');
   font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk Extrabold';
+  src: url('../fonts/NeuzeitGroExt-Bla.eot');
+  src: url('../fonts/NeuzeitGroExt-Bla.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NeuzeitGroExt-Bla.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk Condensed';
+  src: url('../fonts/NeuzeitGroCon-Bla.eot');
+  src: url('../fonts/NeuzeitGroCon-Bla.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NeuzeitGroCon-Bla.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -57,14 +67,3 @@
   font-style: normal;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'NeuzeitGroExt-Bla';
-  src: url('../fonts/NeuzeitGroExt-Bla.eot');
-  src: url('../fonts/NeuzeitGroExt-Bla.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/NeuzeitGroExt-Bla.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-

@@ -4,6 +4,7 @@
   height: 4px;
   margin: 0 $default-padding $default-padding * 3 $default-padding;
   background: $light-gray;
+  @include border-radius(999px);
 }
 
 .flag {
